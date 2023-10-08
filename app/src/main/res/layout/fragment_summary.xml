@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".SummaryFragment">
 
     <data>
@@ -124,6 +125,15 @@
                 android:layout_marginTop="@dimen/side_margin"
                 android:onClick="@{() -> summaryFragment.sendOrder()}"
                 android:text="@string/send" />
+
+            <Button
+                android:id="@+id/cancel_button"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:onClick="@{() -> summaryFragment.cancelOrder()}"
+                android:text="@string/cancel" />
 
         </LinearLayout>
     </ScrollView>
