@@ -23,6 +23,6 @@ class ViewModelTests {
         viewModel.price.observeForever {}
         viewModel.setQuantity(12)
 
-        assertEquals("$27.00", viewModel.price.value)
+        assertEquals(27.0, viewModel.price.value)
     }
 }
